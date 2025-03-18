@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
       
       - name: Qualys WAS scan action step
-        uses: Qualys/github-action-qwas@v1.1.0-beta
+        uses: Qualys/github-action-qwas@v1.1.1-beta
         id: was
         with:
           API_SERVER: ${{ vars.API_SERVER }}
