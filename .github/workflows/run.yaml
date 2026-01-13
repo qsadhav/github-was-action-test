@@ -15,8 +15,8 @@ jobs:
         id: was
         with:
           API_SERVER: ${{ vars.API_SERVER }}
-          QUALYS_USERNAME: ${{ vars.QUALYS_USERNAME }}
-          QUALYS_PASSWORD: ${{ secrets.QUALYS_PASSWORD }}
+          CLIENT_ID: ${{ vars.QUALYS_USERNAME }}
+          CLIENT_SECRET: ${{ secrets.QUALYS_PASSWORD }}
           WEBAPP_ID: ${{ vars.WEBAPP_ID }}
           SCAN_NAME: ${{ vars.SCAN_NAME }}
           SCAN_TYPE: ${{ vars.SCAN_TYPE }}
