@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
       
       - name: Qualys WAS scan action step
-        uses: Qualys/github-action-qwas@v1.1.2-beta
+        uses: Qualys/github-action-qwas@v2.0.0-beta
         id: was
         with:
           API_SERVER: ${{ vars.API_SERVER }}
@@ -33,3 +33,5 @@ jobs:
           WAIT_FOR_RESULT: ${{ vars.WAIT_FOR_RESULT }}
           INTERVAL: ${{ vars.INTERVAL }}
           TIMEOUT: ${{ vars.TIMEOUT }}
+          FILE_TYPE: ${{ vars.FILE_TYPE }}
+          AUTH_TYPE: ${{ vars.AUTH_TYPE }}
