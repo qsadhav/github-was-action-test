@@ -35,3 +35,4 @@ jobs:
           TIMEOUT: ${{ vars.TIMEOUT }}
           FILE_TYPE: ${{ vars.FILE_TYPE }}
           AUTH_TYPE: ${{ vars.AUTH_TYPE }}
+          PLATFORM: ${{ vars.PLATFORM }}
