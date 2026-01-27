@@ -15,8 +15,6 @@ jobs:
         id: was
         with:
           API_SERVER: ${{ vars.API_SERVER }}
-          CLIENT_ID: ${{ vars.CLIENT_ID }}
-          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
           WEBAPP_ID: ${{ vars.WEBAPP_ID }}
           SCAN_NAME: ${{ vars.SCAN_NAME }}
           SCAN_TYPE: ${{ vars.SCAN_TYPE }}
@@ -34,5 +32,3 @@ jobs:
           INTERVAL: ${{ vars.INTERVAL }}
           TIMEOUT: ${{ vars.TIMEOUT }}
           FILE_TYPE: ${{ vars.FILE_TYPE }}
-          AUTH_TYPE: ${{ vars.AUTH_TYPE }}
-          PLATFORM: ${{ vars.PLATFORM }}
